@@ -40,7 +40,7 @@
 <br class="clearBoth" />
 
 <label class="inputLabel" for="telephone"><?php echo ENTRY_TELEPHONE; ?></label>
-<?php echo zen_draw_input_field('telephone', $entry->fields['entry_telephone'], zen_set_field_length(TABLE_CUSTOMERS, 'customers_telephone', '40') . ' id="telephone"') . (zen_not_null(ENTRY_TELEPHONE_TEXT) ? '<span class="alert">' . ENTRY_TELEPHONE_TEXT . '</span>': ''); ?>
+<?php echo zen_draw_input_field('telephone', $entry->fields['entry_telephone'], zen_set_field_length(TABLE_CUSTOMERS, 'customers_telephone', '40') . ' id="telephone" placeholder="' . ENTRY_TELEPHONE_TEXT . '"' . ((int)ENTRY_TELEPHONE_TEXT > 0 ? ' required' : '')); ?>
 <br class="clearBoth" />
 
 <?php

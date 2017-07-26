@@ -67,7 +67,7 @@ if (isset($_POST['action']) && ($_POST['action'] == 'submit')) {
 
     if (strlen($telephone) < ENTRY_TELEPHONE_MIN_LENGTH) {
       $error = true;
-      $messageStack->add('checkout_telephone', ENTRY_TELEPHONE_ERROR);
+      $messageStack->add('checkout_address', ENTRY_TELEPHONE_NUMBER_ERROR);
     }
     
     if (strlen($street_address) < ENTRY_STREET_ADDRESS_MIN_LENGTH) {
